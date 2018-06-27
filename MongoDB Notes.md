@@ -35,8 +35,6 @@ switched to db weather_ai
 
 ## Show Collections
 
-
-
 ` show collections `
 
 __ouput__ :
@@ -62,7 +60,7 @@ __example__:
 
 
 ```json
-> db.cards.find().pretty()
+ 	> db.cards.find().pretty()
 {
 	"_id" : ObjectId("5b32e0f1ef20d83f73d54253"),
 	"pieces" : [
@@ -81,8 +79,19 @@ __example__:
 	"cardId" : "E3:23:12:44:22",
 	"__v" : 0
 }
-
 ```
 
-​	
+
+
+## Insert a new document
+
+
+
+` db.collection.insert({"key": "value"})`
+
+__example__:
+
+```
+db.mqttconfigurations.insert({ "card": "E3:23:12:44:22", "parameter": "Temperature"})
+```
 

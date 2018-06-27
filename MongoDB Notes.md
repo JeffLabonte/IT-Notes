@@ -8,7 +8,7 @@
 
 ` show dbs`
 
-output : 
+__output__ : 
 
 ```mongo output
 > show dbs
@@ -24,6 +24,8 @@ weather_ai  0.000GB
 
 ` use weather_ai`
 
+__output__ : 
+
 ```
 > use weather_ai
 switched to db weather_ai
@@ -37,5 +39,50 @@ switched to db weather_ai
 
 ` show collections `
 
+__ouput__ :
 
+```
+cards
+logs
+mqttconfigurations
+```
+
+
+
+## Select all document in a collection
+
+
+
+`db.collection.find().pretty()`
+
+
+
+__example__:
+
+
+
+```json
+> db.cards.find().pretty()
+{
+	"_id" : ObjectId("5b32e0f1ef20d83f73d54253"),
+	"pieces" : [
+		{
+			"parameters" : [
+				{
+					"value" : "100",
+					"_id" : ObjectId("5b32e0f1ef20d83f73d54251"),
+					"name" : "Temperature"
+				}
+			],
+			"_id" : ObjectId("5b32e0f1ef20d83f73d54252")
+		}
+	],
+	"date" : ISODate("2018-06-27T00:57:21.014Z"),
+	"cardId" : "E3:23:12:44:22",
+	"__v" : 0
+}
+
+```
+
+​	
 

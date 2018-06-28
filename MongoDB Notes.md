@@ -85,8 +85,6 @@ __example__:
 
 ## Insert a new document
 
-
-
 ` db.collection.insert({"key": "value"})`
 
 __example__:
